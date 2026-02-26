@@ -185,9 +185,15 @@ footer{background:#101733;padding:30px;text-align:center;color:#888;}
 <!-- FOLLOW US -->
 <section id="follow">
 <h2 class="section-title">Follow Us</h2>
-<div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
-<a href="https://www.youtube.com/@phizimaths" target="_blank" class="btn" style="background:#FF0000;color:white;">YouTube @PHIZIMATHS</a>
-<a href="https://instagram.com/phizimaths" target="_blank" class="btn" style="background:#C13584;color:white;">Instagram @PHIZIMATHS</a>
+<div style="display:flex;flex-direction:column;align-items:center;gap:30px;">
+<a href="https://www.youtube.com/@PHIZIMATHS" target="_blank">
+  <img src="youtube.jpeg" style="width:500px;border-radius:12px;cursor:pointer;margin:30px0:">
+</a>
+
+<a href="https://instagram.com/phizimaths" target="_blank">
+  <img src="instagram.jpeg" style="width:250px;border-radius:12px;cursor:pointer;margin:20px0;">
+</a>
+
 </div>
 </section>
 
@@ -251,7 +257,23 @@ function addReview(){
     alert("Thank you! Your review has been added.");
   } else alert("Please write something before submitting.");
 }
+<h2 style="text-align:center; margin-top:40px;">Follow Us Online</h2>
 
+<div style="text-align:center; margin-top:20px;">
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@pHIZIMATHS" target="_blank">
+    <img src="youtube.jpeg" alt="YouTube Channel"
+         style="width:300px; margin:15px; border-radius:12px; cursor:pointer;">
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/phizimaths" target="_blank">
+    <img src="instagram.jpeg" alt="Instagram Page"
+         style="width:300px; margin:15px; border-radius:12px; cursor:pointer;">
+  </a>
+
+</div>
 // WHATSAPP FORM
 function sendToWhatsApp(){
   let name=document.getElementById("name").value;
