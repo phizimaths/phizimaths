@@ -68,11 +68,47 @@ section{padding:100px 8%;text-align:center;}
 .teacher-card p{color:#fff;font-size:14px;}
 
 /* GALLERY */
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
-.gallery-grid a{display:block;}
-.gallery-grid img{width:100%;border-radius:10px;border:2px solid #38bdf8;transition:0.3s;}
-.gallery-grid img:hover{transform:scale(1.05);box-shadow:0 0 20px #f472b6;}
+/* ===== GALLERY LAYOUT - 3 PER ROW ===== */
 
+.gallery-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:20px;
+}
+
+.gallery-grid a{
+  display:block;
+}
+
+.gallery-grid img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  border:2px solid #38bdf8;
+  transition:0.3s;
+}
+
+.gallery-grid img:hover{
+  transform:scale(1.03);
+  box-shadow:0 0 20px #f472b6;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+  .gallery-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width:600px){
+  .gallery-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+ 
 /* FORM */
 input,textarea{padding:12px;border:none;border-radius:10px;width:100%;margin-bottom:12px;background:#101733;color:white;border:1px solid #38bdf8;}
 button{padding:12px;border:none;border-radius:10px;background:linear-gradient(45deg,#38bdf8,#f472b6,#facc15);color:black;font-weight:600;cursor:pointer;width:100%;}
@@ -139,33 +175,64 @@ footer{background:#101733;padding:30px;text-align:center;color:#888;}
 
   <div class="gallery-grid">
 
-    <a href="classroom1.jpg" target="_blank">
-      <img src="classroom1.jpeg" alt="Classroom Session 1">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom1.jpeg" target="_blank">
+        <img src="classroom1.jpeg" alt="Classroom Session 1">
+      </a>
+      <p class="gallery-title">Happy faces, strong foundation</p>
+    </div>
 
-    <a href="classroom2.jpg" target="_blank">
-      <img src="classroom2.jpeg" alt="Classroom Session 2">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom2.jpeg" target="_blank">
+        <img src="classroom2.jpeg" alt="Classroom Session 2">
+      </a>
+      <p class="gallery-title">Moments of learning and growth</p>
+    </div>
 
-    <a href="classroom3.jpeg" target="_blank">
-      <img src="classroom3.jpeg" alt="Classroom Session 3">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom3.jpeg" target="_blank">
+        <img src="classroom3.jpeg" alt="Classroom Session 3">
+      </a>
+      <p class="gallery-title">successfully stepping in DTU</p>
+    </div>
 
-    <a href="classroom4.jpeg" target="_blank">
-      <img src="classroom4.jpeg" alt="Classroom Session 4">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom4.jpeg" target="_blank">
+        <img src="classroom4.jpeg" alt="Classroom Session 4">
+      </a>
+      <p class="gallery-title">Building thinkers, not rote learners</p>
+    </div>
 
-   <a href="classroom5.jpeg" target="_blank">
-      <img src="classroom5.jpeg" alt="Classroom Session 5">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom5.jpeg" target="_blank">
+        <img src="classroom5.jpeg" alt="Classroom Session 5">
+      </a>
+      <p class="gallery-title">Our classroom energy</p>
+    </div>
 
-    <a href="classroom6.jpeg" target="_blank">
-      <img src="classroom6.jpeg" alt="Classroom Session 6">
-    </a>
+    <div class="gallery-item">
+      <a href="classroom6.jpeg" target="_blank">
+        <img src="classroom6.jpeg" alt="Classroom Session 6">
+      </a>
+      <p class="gallery-title">Learning with clarity and care</p>
+    </div>
+
+    <div class="gallery-item">
+      <a href="classroom7.jpeg" target="_blank">
+        <img src="classroom7.jpeg" alt="Classroom Session 7">
+      </a>
+      <p class="gallery-title">Moments of learning at PHIZIMATHS</p>
+    </div>
+
+   <div class="gallery-item">
+      <a href="classroom8.jpeg" target="_blank">
+        <img src="classroom8.jpeg" alt="Classroom Session 8">
+      </a>
+      <p class="gallery-title">dream come true in IIT Indore</p>
+    </div>
 
   </div>
 </section>
-
 <!-- REVIEWS -->
 <section id="reviews">
 <h2 class="section-title">What Students Say</h2>
